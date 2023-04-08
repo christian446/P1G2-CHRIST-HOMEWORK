@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>Tarea 2.5 - UPC</H2>
+
+<p>Bienvenido Christian</p>
+
+<button onclick="myTercerAlgoritmo()">boton en HTML</button>
+
+<script>
+function ExisteA(nombre) {
+    if (nombre.includes("a")) {
+        return true
+    }else{
+        return false
+    }
+}
+function ExisteE(nombre) {
+    if (nombre.includes("e")) {
+        return true
+    }else{
+        return false
+    }
+}
+function ExisteI(nombre) {
+    if (nombre.includes("i")) {
+        return true
+    }else{
+        return false
+    }
+}
+function ExisteO(nombre) {
+    if (nombre.includes("o")) {
+        return true
+    }else{
+        return false
+    }
+}
+function ExisteU(nombre) {
+    if (nombre.includes("u")) {
+        return true
+    }else{                                                                                                                                                                                              
+        return false
+    }
+}
+
+
+function myTercerAlgoritmo() {
+   var nombre = "CHRISTIAN"
+    
+   if(ExisteA(nombre)) {
+       alert(nombre + "Existe la vocal (A)")
+    }else{   
+        if(ExisteE(nombre)) {      
+            alert(nombre + " Existe la vocal (E)")
+        }else{  
+            if(ExisteI(nombre)) {
+                alert(nombre + " Existe la vocal (I)") 
+            }else{    
+                if(ExisteO(nombre)) {
+                alert(nombre + " Existe la vocal (O)") 
+                }else{   
+                    if(ExisteU(nombre)) {
+                    alert(nombre + "Existe la vocal (U)") 
+                    }else{   
+                        alert("No Existe la vocal (A,E,I,O,U)")
+                    }   
+                }   
+            }
+        }
+    }   
+} 
+  </script>
+  </body>
+  </html>
